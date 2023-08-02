@@ -8,7 +8,7 @@ function MainNavigation() {
         <div className="main-navigation">
             <div className="main-navigation-left">
                 <Link to='/' className="navigation-logo-link" end>
-                    <img src={logo} alt='nav-logo' width='100%' />
+                    <img src={logo} alt='nav-logo' width='80%' />
                 </Link>
             </div>
 

@@ -2,6 +2,7 @@ import { Outlet } from "react-router";
 
 import MainNavigation from "./main-navigation";
 import MainFooter from "./main-footer";
+import Copyright from "./copyright";
 
 function MainLayout() {
 
@@ -10,6 +11,7 @@ function MainLayout() {
             <MainNavigation />
             <Outlet />
             <MainFooter />
+            <Copyright />
         </div>
     );
 }

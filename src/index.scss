@@ -15,10 +15,10 @@
 
     .error-title {
         font-size: 3em;
-        color: #161616;
+        color: $black;
         margin: 2rem 0;
         padding-bottom: 0.5rem;
-        border-bottom: 1px solid #161616;
+        border-bottom: 1px solid $black;
     }
 
     .error-subtitle {
@@ -28,10 +28,11 @@
     .error-link {
         font-size: 1.2em;
         margin-top: 3rem;
+        color: $blue300;
         transition: color 300ms ease-in-out;
 
         &:hover {
-            color: lightblue;
+            color: $blue200;
         }
     }
 }
