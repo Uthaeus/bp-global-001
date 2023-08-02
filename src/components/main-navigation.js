@@ -7,15 +7,13 @@ function MainNavigation() {
     return (
         <div className="main-navigation">
             <div className="main-navigation-left">
-                <Link to='/' end>
-                    <img src={logo} alt='nav-logo' />
+                <Link to='/' className="navigation-logo-link" end>
+                    <img src={logo} alt='nav-logo' width='100%' />
                 </Link>
             </div>
 
             <div className="main-navigation-right">
-                <div className="navigation-phone-wrapper">
-                    <p className="navigation-phone">800-555-5555</p>
-                </div>
+                <p className="navigation-phone">800-555-5555</p>
 
                 <div className="navigation-links-wrapper">
                     <NavLink to='/' className={({isActive}) => isActive ? 'nav-link link-active' : 'nav-link'} end>Products</NavLink>
