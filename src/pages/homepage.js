@@ -3,13 +3,17 @@ import { Link } from 'react-router-dom';
 import image from '../assets/thumbnails/49er-thumb.png';
 import thumb1 from '../assets/thumbnails/giants-thumb.png';
 import thumb2 from '../assets/thumbnails/sf-thumb.png';
+import thumb3 from '../assets/thumbnails/machine-main.jpeg';
+import thumb4 from '../assets/thumbnails/machine-thumb.jpeg';
+import thumb5 from '../assets/thumbnails/overtime_image1.jpg';
+import thumb6 from '../assets/thumbnails/overtime_image2.jpeg';
 
 function HomePage() {
 
     return (
         <div className="homepage">
             <div className="homepage-1" style={{  
-            backgroundImage: "url(" + image + ")",
+            backgroundImage: "url(" + thumb5 + ")",
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover'
@@ -30,7 +34,7 @@ function HomePage() {
 
                 <div className='homepage-2-content'>
                     <div className='homepage-2-content-item'>
-                        <img src={thumb1} alt='content 1' width='100%' />
+                        <img src={thumb3} alt='content 1' width='100%' />
 
                         <Link className='content-item-title'>What We Do</Link>
 
@@ -38,7 +42,7 @@ function HomePage() {
                     </div>
 
                     <div className='homepage-2-content-item'>
-                        <img src={thumb2} alt='content 1' width='100%' />
+                        <img src={thumb4} alt='content 1' width='100%' />
 
                         <Link to='/' className='content-item-title'>Why BP Global</Link>
 
@@ -47,34 +51,39 @@ function HomePage() {
                 </div>
             </div>
 
-            <div className='homepage-3'>
+            <div className='homepage-3' style={{  
+            backgroundImage: "url(" + thumb4 + ")",
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover'
+            }}>
                 <h3 className='homepage-3-title'>We trade a variety of lumber products</h3>
 
                 <p className='homepage-3-subtitle'>BP Global trades a variety of lumber, panel, and industrial products. We also manage ready-to-ship inventory at locations across North America to provide wood products where and when you need it.</p>
 
                 <div className='homepage-3-content'>
                     <div className='homepage-3-content-item'>
-                        <img src={thumb1} alt='content item 1' className='content-item-img' />
+                        <img src={image} alt='content item 1' width='100%' height='100px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>Industrial</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb1} alt='content item 1' className='content-item-img' />
+                        <img src={thumb6} alt='content item 1' width='100%' height='100px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>Industrial</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb1} alt='content item 1' className='content-item-img' />
+                        <img src={thumb3} alt='content item 1' width='100%' height='100px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>Industrial</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb1} alt='content item 1' className='content-item-img' />
+                        <img src={thumb4} alt='content item 1' width='100%' height='100px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>Industrial</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb1} alt='content item 1' className='content-item-img' />
+                        <img src={thumb5} alt='content item 1' width='100%' height='100px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>Industrial</Link>
                     </div>
                 </div>

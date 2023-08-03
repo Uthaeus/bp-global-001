@@ -89,6 +89,41 @@
     }
 
     .homepage-3 {
-        
+        padding: 2rem;
+
+        .homepage-3-title {
+            font-size: 2.2em;
+            color: $blue400;
+            margin: 1rem 0;
+            text-align: center;
+        }
+
+        .homepage-3-subtitle {
+            font-size: 1.1em;
+            color: $black;
+            text-align: center;
+        }
+
+        .homepage-3-content {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 1rem 0;
+
+            .homepage-3-content-item {
+                width: 15%;
+
+                .content-item-link {
+                    text-decoration: none;
+                    text-align: center;
+                    font-size: 1.1em;
+                    color: $blue300;
+                    transition: color 300ms ease-in-out;
+
+                    &:hover {
+                        color: $blue100;
+                    }
+                }
+            }
+        }
     }
 }
