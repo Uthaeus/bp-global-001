@@ -1,5 +1,8 @@
+import { Link } from 'react-router-dom';
 
 import image from '../assets/thumbnails/49er-thumb.png';
+import thumb1 from '../assets/thumbnails/giants-thumb.png';
+import thumb2 from '../assets/thumbnails/sf-thumb.png';
 
 function HomePage() {
 
@@ -18,6 +21,63 @@ function HomePage() {
                 </div>
 
                 <button className='homepage-1-btn'>About BP Global</button>
+            </div>
+
+            <div className='homepage-2'>
+                <h1 className='homepage-2-title'>We are your lumber trading partner</h1>
+
+                <p className='homepage-2-subtitle'>We connect supply with demand and provide solutions to your challenges</p>
+
+                <div className='homepage-2-content'>
+                    <div className='homepage-2-content-item'>
+                        <img src={thumb1} alt='content 1' width='100%' />
+
+                        <Link className='content-item-title'>What We Do</Link>
+
+                        <p className='content-item-blurb'>paragraph here summarizing what is explained on the what we do page. Could probably use another sentence here to make it a little longer. Maybe a little more would make it look a bit better.</p>
+                    </div>
+
+                    <div className='homepage-2-content-item'>
+                        <img src={thumb2} alt='content 1' width='100%' />
+
+                        <Link to='/' className='content-item-title'>Why BP Global</Link>
+
+                        <p className='content-item-blurb'>paragraph here summarizing what is explained on the what we do page. Could probably use another sentence here to make it a little longer. Maybe a little more would make it look a bit better.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className='homepage-3'>
+                <h3 className='homepage-3-title'>We trade a variety of lumber products</h3>
+
+                <p className='homepage-3-subtitle'>BP Global trades a variety of lumber, panel, and industrial products. We also manage ready-to-ship inventory at locations across North America to provide wood products where and when you need it.</p>
+
+                <div className='homepage-3-content'>
+                    <div className='homepage-3-content-item'>
+                        <img src={thumb1} alt='content item 1' className='content-item-img' />
+                        <Link to='/' className='content-item-link'>Industrial</Link>
+                    </div>
+
+                    <div className='homepage-3-content-item'>
+                        <img src={thumb1} alt='content item 1' className='content-item-img' />
+                        <Link to='/' className='content-item-link'>Industrial</Link>
+                    </div>
+
+                    <div className='homepage-3-content-item'>
+                        <img src={thumb1} alt='content item 1' className='content-item-img' />
+                        <Link to='/' className='content-item-link'>Industrial</Link>
+                    </div>
+
+                    <div className='homepage-3-content-item'>
+                        <img src={thumb1} alt='content item 1' className='content-item-img' />
+                        <Link to='/' className='content-item-link'>Industrial</Link>
+                    </div>
+
+                    <div className='homepage-3-content-item'>
+                        <img src={thumb1} alt='content item 1' className='content-item-img' />
+                        <Link to='/' className='content-item-link'>Industrial</Link>
+                    </div>
+                </div>
             </div>
         </div>
     );
