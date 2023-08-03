@@ -16,7 +16,7 @@
         }
 
         .homepage-1-subtitle-wrapper {
-            padding: 8px 20px;
+            padding: 8px 80px;
             border: 2px solid $black;
 
             .homepage-1-subtitle {
@@ -26,29 +26,28 @@
 
         .homepage-1-btn {
             margin-top: 2rem;
-            padding: 4px 20px;
+            padding: 4px 60px;
             background-color: $blue300;
             color: white;
             border-radius: 3px;
-            box-shadow: 2px 2px 3px #ccc;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.408);
             transition: opacity 300ms ease-in-out, box-shadow 300ms ease-in-out;
 
             &:hover {
-                opacity: 0.7;
-                box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.274);
+                opacity: 0.8;
+                box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.408);
             }
         }
     }
 
     .homepage-2 {
-        height: 100vh;
         width: 80%;
         margin: 0 auto;
 
         .homepage-2-title {
             font-size: 2.4em;
             color: $black;
-            margin: 1rem 0;
+            margin: 3rem 0;
             text-align: center;
         }
 
@@ -61,16 +60,18 @@
         .homepage-2-content {
             display: flex;
             justify-content: space-evenly;
-            margin-top: 2rem;
+            margin: 80px 0;
 
             .homepage-2-content-item {
                 width: 35%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
                 .content-item-title {
-                    margin: 0.25rem 0;
-                    font-size: 1.3em;
+                    margin: 0.75rem 0;
+                    font-size: 1.7em;
                     font-weight: 500;
-                    text-align: center;
                     text-decoration: none;
                     color: $blue300;
                     transition: color 300ms ease-in-out;
@@ -81,7 +82,6 @@
                 }
 
                 .content-item-blurb {
-                    text-align: center;
                     color: $black;
                 }
             }
@@ -92,14 +92,19 @@
         padding: 2rem;
 
         .homepage-3-title {
-            font-size: 2.2em;
+            font-size: 2.4em;
+            font-weight: 600;
             color: $blue400;
-            margin: 1rem 0;
+            margin: 2rem 0;
             text-align: center;
         }
 
         .homepage-3-subtitle {
-            font-size: 1.1em;
+            width: 60%;
+            margin: 2rem auto;
+            margin-bottom: 40px;
+            font-size: 1.4em;
+            font-weight: 500;
             color: $black;
             text-align: center;
         }
@@ -107,15 +112,19 @@
         .homepage-3-content {
             display: flex;
             justify-content: space-evenly;
-            margin: 1rem 0;
+            margin-top: 100px;
+            margin-bottom: 80px;
 
             .homepage-3-content-item {
                 width: 15%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
                 .content-item-link {
                     text-decoration: none;
-                    text-align: center;
-                    font-size: 1.1em;
+                    margin: 0.5rem 0;
+                    font-size: 1.3em;
                     color: $blue300;
                     transition: color 300ms ease-in-out;
 

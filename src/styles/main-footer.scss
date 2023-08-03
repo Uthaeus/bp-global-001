@@ -33,6 +33,12 @@
             font-size: 1.8em;
             color: $blue100;
             margin: 0 15px;
+            transition: color 300ms ease-in-out, transform 300ms ease-in-out;
+
+            &:hover {
+                color: $silver;
+                transform: scale(1.1);
+            }
         }
     }
 

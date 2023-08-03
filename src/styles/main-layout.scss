@@ -2,12 +2,13 @@
 @import 'main-footer.scss';
 
 @import 'homepage.scss';
+@import 'contactpage.scss';
 
 .main-layout {
     min-height: 100vh;
     margin: 0;
     position: relative;
-    padding-bottom: 450px;
+    padding-bottom: 426px;
     font-family: 'Lora', serif;
     //font-family: 'Titillium Web', sans-serif;
 }
