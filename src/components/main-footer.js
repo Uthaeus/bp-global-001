@@ -30,12 +30,12 @@ function MainFooter() {
             </div>
 
             <div className='footer-policies-wrapper'>
-                <Link to='/' className='footer-policy'>policy |</Link>
-                <Link to='/' className='footer-policy'>policy |</Link>
-                <Link to='/' className='footer-policy'>policy |</Link>
-                <Link to='/' className='footer-policy'>policy |</Link>
-                <Link to='/' className='footer-policy'>policy |</Link>
-                <Link to='/' className='footer-policy'>policy |</Link>
+                <Link to='/' className='footer-policy'>policy</Link> |
+                <Link to='/' className='footer-policy'>policy</Link> |
+                <Link to='/' className='footer-policy'>policy</Link> |
+                <Link to='/' className='footer-policy'>policy</Link> |
+                <Link to='/' className='footer-policy'>policy</Link> |
+                <Link to='/' className='footer-policy'>policy</Link> |
                 <Link to='/' className='footer-policy'>policy</Link>
             </div>
         </div>
