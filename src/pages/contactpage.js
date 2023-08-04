@@ -17,7 +17,7 @@ function ContactPage() {
                 <p>map here</p>
             </div>
 
-            <h1 className="contact-title">Contact BP Global</h1>
+            <h1 className="contact-title">CONTACT BP GLOBAL</h1>
 
             <div className="contact-content-wrapper">
                 <div className="contact-content-item">
@@ -45,56 +45,58 @@ function ContactPage() {
 
                 <div className="contact-content-item">
                     <p className="content-item-title">Email</p>
-                    <a href='mailto:example@example.com' className="content-item-link">youremail@example.com</a>
-                    <a href='mailto:example@example.com' className="content-item-link">anotheremail@example.com</a>
-                    <a href='mailto:example@example.com' className="content-item-link">thirdemail@example.com</a>
+                    <p className='content-item-text'><a href='mailto:example@example.com' className="content-item-link">youremail@example.com</a></p>
+                    <p className='content-item-text'><a href='mailto:example@example.com' className="content-item-link">anotheremail@example.com</a></p>
+                    <p className='content-item-text'><a href='mailto:example@example.com' className="content-item-link">thirdemail@example.com</a></p>
                 </div>
             </div>
 
-            <img src={image} alt='our location' width='70%' />
+            <div className='contact-image-wrapper'>
+                <img src={image} alt='our location' width='100%' height='450px' />
+            </div>
 
             <div className='contact-form-wrapper'>
                 <h2 className='contact-form-title'>Have a Question or Comment?</h2>
                 <form onSubmit={handleSubmit(submitHandler)} className='contact-form'>
-                    <div className='row'>
+                    <div className='row mb-5'>
                         <div className='col-md-6'>
                             <div className='form-group'>
-                                <label htmlFor='firstName'>First Name</label>
+                                <label htmlFor='firstName' className='contact-form-label'>First Name</label>
                                 <input type='text' className='form-control' {...register('firstName', {required: true})} />
                             </div>
                         </div>
 
                         <div className='col-md-6'>
                             <div className='form-group'>
-                                <label htmlFor='lastName'>Last Name</label>
+                                <label htmlFor='lastName' className='contact-form-label'>Last Name</label>
                                 <input type="text" className='form-control' {...register('lastName', {required: true})} />
                             </div>
                         </div>
                     </div>
 
-                    <div className='row'>
+                    <div className='row mb-5'>
                         <div className='col-md-6'>
                             <div className='form-group'>
-                                <label htmlFor='phone'>Phone</label>
+                                <label htmlFor='phone' className='contact-form-label'>Phone</label>
                                 <input type='phone' className='form-control' {...register('phone', {required: true})} />
                             </div>
                         </div>
 
                         <div className='col-md-6'>
                             <div className='form-group'>
-                                <label htmlFor='email'>Email</label>
+                                <label htmlFor='email' className='contact-form-label'>Email</label>
                                 <input type='email' className='form-control' {...register('email', {required: true})} />
                             </div>
                         </div>
                     </div>
 
-                    <div className='form-group'>
-                        <label htmlFor='comment'>Comment</label>
+                    <div className='form-group mb-4'>
+                        <label htmlFor='comment' className='contact-form-label'>Comment</label>
                         <textarea className='form-control' rows={3} {...register('comment', {required: true})} />
                     </div>
 
                     <div className='contact-form-actions'>
-                        <button type='submit' className='contact-form-btn'>Submit</button>
+                        <button type='submit' className='contact-form-btn'>SUBMIT</button>
                     </div>
                 </form>
             </div>

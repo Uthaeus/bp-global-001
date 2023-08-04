@@ -2,7 +2,7 @@
 .contactpage {
 
     .map-div {
-        height: 300px;
+        height: 350px;
         background-color: grey;
         display: flex;
         align-items: center;
@@ -11,28 +11,34 @@
 
     .contact-title {
         font-size: 2.4em;
+        font-weight: 800;
+        letter-spacing: 3px;
         color: $blue500;
         text-align: center;
         margin: 2rem 0;
     }
 
     .contact-content-wrapper {
-        width: 40%;
+        width: 42%;
+        margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 50%);
 
         .contact-content-item {
-            margin: 1fr 0;
+            margin-bottom: 30px;
             font-size: 1.4em;
 
             .content-item-title {
-                font-weight: 600;
+                font-weight: 500;
                 color: $blue300;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
             }
 
             .content-item-text {
+                font-weight: 200;
                 color: $black;
+                padding: 0;
+                margin:0;
             }
 
             .content-item-link {
@@ -41,6 +47,54 @@
 
                 &:hover {
                     color: $blue200;
+                }
+            }
+        }
+    }
+
+    .contact-image-wrapper {
+        width: 72%;
+        margin: 40px auto;
+    }
+
+    .contact-form-wrapper {
+        background-color: lightgrey;
+        padding: 60px 0;
+
+        .contact-form-title {
+            color: $blue500;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .contact-form {
+            width: 50%;
+            margin: 50px auto;
+
+            .contact-form-label {
+                color: $blue200;
+                margin-bottom: 10px;
+            }
+
+            .contact-form-actions {
+                display: flex;
+                justify-content: center;
+
+                .contact-form-btn {
+                    margin-top: 30px;
+                    padding: 5px 16px;
+                    border: 2px solid white;
+                    background-color: $blue200;
+                    font-size: 1.1em;
+                    font-weight: 500;
+                    color: $black;
+                    transition: color 300ms ease-in-out, background-color 300ms ease-in-out, border-color 300ms ease-in-out;
+
+                    &:hover {
+                        background-color: $blue500;
+                        border-color: $blue500;
+                        color: $blue100;
+                    }
                 }
             }
         }

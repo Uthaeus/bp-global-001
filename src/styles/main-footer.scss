@@ -7,7 +7,7 @@
     position: absolute;
     bottom: 30px;
     left: 0;
-    background-color: $blue300;
+    background-color: $blue200;
     border-top: 2px solid lightgray;
     display: flex;
     flex-direction: column;
@@ -18,16 +18,21 @@
         font-size: 2em;
         font-weight: bold;
         color: $black;
-        margin-top: 0.4rem;
+        margin-top: 25px;
+        margin-bottom: 0;
+        padding: 0;
     }
 
     .footer-address {
+        padding: 0;
+        margin: 0;
         font-size: 1.2em;
     }
 
     .footer-socials-wrapper {
         display: flex;
         justify-content: center;
+        margin: 20px 0;
 
         .footer-social {
             font-size: 1.8em;

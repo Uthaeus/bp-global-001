@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import image from '../assets/thumbnails/49er-thumb.png';
 //import thumb1 from '../assets/thumbnails/giants-thumb.png';
@@ -9,6 +9,7 @@ import thumb5 from '../assets/thumbnails/overtime_image1.jpg';
 import thumb6 from '../assets/thumbnails/overtime_image2.jpeg';
 
 function HomePage() {
+    const navigate = useNavigate();
 
     return (
         <div className="homepage">
@@ -18,17 +19,17 @@ function HomePage() {
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover'
             }}>
-                <h1 className='homepage-1-title'>Great People &#x2022; Great Solutions</h1>
+                <h1 className='homepage-1-title'>GREAT PEOPLE &#x2022; GREAT SOLUTIONS</h1>
 
                 <div className='homepage-1-subtitle-wrapper'>
-                    <p className='homepage-1-subtitle'>Keeping the lumber supply chain connected</p>
+                    <p className='homepage-1-subtitle'>KEEPING THE LUMBER SUPPLY CHAIN CONNECTED</p>
                 </div>
 
-                <button className='homepage-1-btn'>About BP Global</button>
+                <button onClick={() => navigate('/about')} className='homepage-1-btn'>ABOUT BP GLOBAL</button>
             </div>
 
             <div className='homepage-2'>
-                <h1 className='homepage-2-title'>We are your lumber trading partner</h1>
+                <h1 className='homepage-2-title'>WE ARE YOUR LUMBER TRADING PARTNER</h1>
 
                 <p className='homepage-2-subtitle'>We connect supply with demand and provide solutions to your challenges</p>
 
@@ -52,12 +53,12 @@ function HomePage() {
             </div>
 
             <div className='homepage-3' style={{  
-            backgroundImage: "url(" + thumb4 + ")",
+            backgroundImage: "url(" + thumb3 + ")",
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover'
             }}>
-                <h3 className='homepage-3-title'>We trade a variety of lumber products</h3>
+                <h3 className='homepage-3-title'>WE TRADE A VARIETY OF LUMBER PRODUCTS</h3>
 
                 <p className='homepage-3-subtitle'>BP Global trades a variety of lumber, panel, and industrial products. We also manage ready-to-ship inventory at locations across North America to provide wood products where and when you need it.</p>
 

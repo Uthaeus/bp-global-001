@@ -9,33 +9,39 @@
         justify-content: center;
 
         .homepage-1-title {
-            font-size: 4.4em;
-            font-weight: bold;
-            color: $black;
-            margin-bottom: 2rem;
+            font-size: 4.2em;
+            font-weight: bolder;
+            color: white;
+            text-shadow: 1px 1px 2px $black;
+            margin-bottom: 25px;
         }
 
         .homepage-1-subtitle-wrapper {
-            padding: 8px 80px;
-            border: 2px solid $black;
+            padding: 8px 30px 0px 30px;
+            background: linear-gradient(40deg, $blue100, $blue200, $blue300, $blue400);
 
             .homepage-1-subtitle {
-                font-size: 1.5em;
+                font-size: 2.6em;
+                color: white;
             }
         }
 
         .homepage-1-btn {
-            margin-top: 2rem;
-            padding: 4px 60px;
-            background-color: $blue300;
-            color: white;
-            border-radius: 3px;
+            margin-top: 80px;
+            padding: 8px 30px;
+            background-color: $blue200;
+            border: 2px solid white;
+            opacity: 0.8;
+            color: $black;
+            font-size: 1.7em;
             box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.408);
-            transition: opacity 300ms ease-in-out, box-shadow 300ms ease-in-out;
+            transition: opacity 300ms ease-in-out, background-color 300ms ease-in-out, color 300ms ease-in-out, border-color 300ms ease-in-out;
 
             &:hover {
-                opacity: 0.8;
-                box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.408);
+                opacity: 1;
+                background-color: $blue500;
+                border-color: $blue500;
+                color: white;
             }
         }
     }
@@ -45,14 +51,16 @@
         margin: 0 auto;
 
         .homepage-2-title {
-            font-size: 2.4em;
-            color: $black;
-            margin: 3rem 0;
+            font-size: 2.2em;
+            font-weight: bolder;
+            color: $blue400;
+            margin-top: 40px;
             text-align: center;
         }
 
         .homepage-2-subtitle {
-            font-size: 1.6em;
+            font-size: 1.5em;
+            font-weight: 800;
             color: $blue500;
             text-align: center;
         }
@@ -60,7 +68,8 @@
         .homepage-2-content {
             display: flex;
             justify-content: space-evenly;
-            margin: 80px 0;
+            margin-top: 30px;
+            margin-bottom: 80px;
 
             .homepage-2-content-item {
                 width: 35%;
@@ -93,15 +102,15 @@
 
         .homepage-3-title {
             font-size: 2.4em;
-            font-weight: 600;
+            font-weight: 700;
             color: $blue400;
-            margin: 2rem 0;
+            margin-top: 50px;
             text-align: center;
         }
 
         .homepage-3-subtitle {
-            width: 60%;
-            margin: 2rem auto;
+            width: 78%;
+            margin: 0 auto;
             margin-bottom: 40px;
             font-size: 1.4em;
             font-weight: 500;
@@ -110,10 +119,10 @@
         }
 
         .homepage-3-content {
+            width: 80%;
+            margin: 40px auto 80px auto;
             display: flex;
             justify-content: space-evenly;
-            margin-top: 100px;
-            margin-bottom: 80px;
 
             .homepage-3-content-item {
                 width: 15%;
@@ -122,7 +131,7 @@
                 align-items: center;
 
                 .content-item-link {
-                    text-decoration: none;
+                    text-align: center;
                     margin: 0.5rem 0;
                     font-size: 1.3em;
                     color: $blue300;
