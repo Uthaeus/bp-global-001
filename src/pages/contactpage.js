@@ -45,9 +45,9 @@ function ContactPage() {
 
                 <div className="contact-content-item">
                     <p className="content-item-title">Email</p>
-                    <a href='mailto:example@example.com' className="content-item-text">youremail@example.com</a>
-                    <a href='mailto:example@example.com' className="content-item-text">anotheremail@example.com</a>
-                    <a href='mailto:example@example.com' className="content-item-text">thirdemail@example.com</a>
+                    <a href='mailto:example@example.com' className="content-item-link">youremail@example.com</a>
+                    <a href='mailto:example@example.com' className="content-item-link">anotheremail@example.com</a>
+                    <a href='mailto:example@example.com' className="content-item-link">thirdemail@example.com</a>
                 </div>
             </div>
 

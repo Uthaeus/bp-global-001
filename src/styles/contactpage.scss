@@ -1,0 +1,48 @@
+
+.contactpage {
+
+    .map-div {
+        height: 300px;
+        background-color: grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-title {
+        font-size: 2.4em;
+        color: $blue500;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .contact-content-wrapper {
+        width: 40%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .contact-content-item {
+            margin: 1fr 0;
+            font-size: 1.4em;
+
+            .content-item-title {
+                font-weight: 600;
+                color: $blue300;
+                margin-bottom: 20px;
+            }
+
+            .content-item-text {
+                color: $black;
+            }
+
+            .content-item-link {
+                color: $blue300;
+                transition: color 300ms ease-in-out;
+
+                &:hover {
+                    color: $blue200;
+                }
+            }
+        }
+    }
+}
