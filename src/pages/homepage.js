@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import image from '../assets/images/overtime_image1.jpg';
 import thumb1 from '../assets/thumbnails/assorted_plywood.jpeg';
+import douglasFirPremium from '../assets/thumbnails/douglas_fir_premium.jpg';
 
 function HomePage() {
     const navigate = useNavigate();
@@ -36,19 +37,11 @@ function HomePage() {
 
                         <p className='content-item-blurb'>Our team works in partnership with out partner suppliers and you partner with us. We work together with you!</p>
                     </div>
-
-                    <div className='homepage-2-content-item'>
-                        <img src={thumb1} alt='content 1' width='100%' height='300px' />
-
-                        <Link to='/' className='content-item-title'>Why BP Global</Link>
-
-                        <p className='content-item-blurb'>OUR TEAM WORKS IN PARTNERSHIP WITH OUR PARTNER SUPPLIERS AND YOU PARTNER WITH US WE WORK TOGETHER WITH YOU!</p>
-                    </div>
                 </div>
             </div>
 
             <div className='homepage-3' style={{  
-            backgroundImage: "url(" + image + ")",
+            backgroundImage: "url(" + douglasFirPremium + ")",
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover'
