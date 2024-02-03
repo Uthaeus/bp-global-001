@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form';
 
-import image from '../assets/thumbnails/overtime_image2.jpeg';
+import image from '../assets/thumbnails/brazilian_plywood_2.jpeg';
 
 function ContactPage() {
     const { handleSubmit, register, reset } = useForm();
@@ -92,7 +92,7 @@ function ContactPage() {
 
                     <div className='form-group mb-4'>
                         <label htmlFor='comment' className='contact-form-label'>Comment</label>
-                        <textarea className='form-control' rows={3} {...register('comment', {required: true})} />
+                        <textarea className='form-control' rows={5} {...register('comment', {required: true})} />
                     </div>
 
                     <div className='contact-form-actions'>

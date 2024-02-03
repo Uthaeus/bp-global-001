@@ -22,9 +22,9 @@ function MainNavigation() {
                             Products
                         </p>
                         <ul id='products-dropdown-menu' className="dropdown-menu">
-                            <li><a className="dropdown-item" href="/">Action</a></li>
-                            <li><a className="dropdown-item" href="/">Another action</a></li>
-                            <li><a className="dropdown-item" href="/">Something else here</a></li>
+                            <li><Link className="dropdown-item" to='/plywoods'>Plywood</Link></li>
+                            <li><Link className="dropdown-item" to="/dimensional-lumber">Dimensional Lumber</Link></li>
+                            <li><Link className="dropdown-item" to='/concrete-forms'>Concrete Forms</Link></li>
                         </ul>
                     </div>
 

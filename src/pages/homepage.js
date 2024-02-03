@@ -1,8 +1,17 @@
 import { Link, useNavigate } from 'react-router-dom';
 
 import image from '../assets/images/overtime_image1.jpg';
-import thumb1 from '../assets/thumbnails/assorted_plywood.jpeg';
+import assortedPlywood from '../assets/thumbnails/assorted_plywood.jpeg';
 import douglasFirPremium from '../assets/thumbnails/douglas_fir_premium.jpg';
+import douglasFirLowgrade from '../assets/thumbnails/douglas_fir_lowgrade.jpeg';
+import douglasFirTimbers from '../assets/thumbnails/douglas_fir_timbers.jpeg';
+import chineseOsb from '../assets/thumbnails/chinese_osb.jpeg';
+import canadianOsb from '../assets/thumbnails/canadian_osb.jpeg';
+import domesticPlywood from '../assets/thumbnails/domestic_plywood.jpeg';
+import chineseWhiteBirch from '../assets/thumbnails/chinese_white_birch.jpeg';
+import brazilianPlywood from '../assets/thumbnails/brazilian_plywood.jpeg';
+import brazilianPlywood2 from '../assets/thumbnails/brazilian_plywood_2.jpeg';
+
 
 function HomePage() {
     const navigate = useNavigate();
@@ -31,7 +40,7 @@ function HomePage() {
 
                 <div className='homepage-2-content'>
                     <div className='homepage-2-content-item'>
-                        <img src={thumb1} alt='content 1' width='100%' height='300px' />
+                        <img src={brazilianPlywood2} alt='content 1' width='100%' height='300px' />
 
                         <Link className='content-item-title'>What We Do</Link>
 
@@ -52,52 +61,47 @@ function HomePage() {
 
                 <div className='homepage-3-content'>
                     <div className='homepage-3-content-item'>
-                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={douglasFirLowgrade} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>DOMESTIC DOUGLAS FIR DIMENSION</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={assortedPlywood} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>PINE PRODUCTS IN DIMENSION AND COMMONS</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={douglasFirTimbers} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>TIMBERS IN DOUGLAS FIR</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={assortedPlywood} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>PLYWOOD</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={canadianOsb} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>OSB</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={domesticPlywood} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>HARDWOOD PLYWOOD</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={chineseWhiteBirch} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>IMPORTED CHINESE BIRCH</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
-                        <Link to='/' className='content-item-link'>MPORTED CONCRETE FORM</Link>
-                    </div>
-
-                    <div className='homepage-3-content-item'>
-                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={chineseOsb} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>IMPORTED CHINESE OSB</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={brazilianPlywood} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>IMPORTED BRAZILIAN PINE AND EUCALIPTUS PLYWOOD</Link>
                     </div>
                 </div>
