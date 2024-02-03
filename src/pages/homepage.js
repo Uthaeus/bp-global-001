@@ -1,12 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 
-import image from '../assets/thumbnails/49er-thumb.png';
-//import thumb1 from '../assets/thumbnails/giants-thumb.png';
-//import thumb2 from '../assets/thumbnails/sf-thumb.png';
-import thumb3 from '../assets/thumbnails/machine-main.jpeg';
-import thumb4 from '../assets/thumbnails/machine-thumb.jpeg';
-import thumb5 from '../assets/thumbnails/overtime_image1.jpg';
-import thumb6 from '../assets/thumbnails/overtime_image2.jpeg';
+import image from '../assets/images/overtime_image1.jpg';
+import thumb1 from '../assets/thumbnails/assorted_plywood.jpeg';
 
 function HomePage() {
     const navigate = useNavigate();
@@ -14,7 +9,7 @@ function HomePage() {
     return (
         <div className="homepage">
             <div className="homepage-1" style={{  
-            backgroundImage: "url(" + thumb5 + ")",
+            backgroundImage: "url(" + image + ")",
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover'
@@ -31,19 +26,19 @@ function HomePage() {
             <div className='homepage-2'>
                 <h1 className='homepage-2-title'>WE ARE YOUR LUMBER TRADING PARTNER</h1>
 
-                <p className='homepage-2-subtitle'>We connect supply with demand and provide solutions to your challenges</p>
+                {/* <p className='homepage-2-subtitle'>We connect supply with demand and provide solutions to your challenges</p> */}
 
                 <div className='homepage-2-content'>
                     <div className='homepage-2-content-item'>
-                        <img src={thumb3} alt='content 1' width='100%' height='300px' />
+                        <img src={thumb1} alt='content 1' width='100%' height='300px' />
 
                         <Link className='content-item-title'>What We Do</Link>
 
-                        <p className='content-item-blurb'>paragraph here summarizing what is explained on the what we do page. Could probably use another sentence here to make it a little longer. Maybe a little more would make it look a bit better.</p>
+                        <p className='content-item-blurb'>Our team works in partnership with out partner suppliers and you partner with us. We work together with you!</p>
                     </div>
 
                     <div className='homepage-2-content-item'>
-                        <img src={thumb4} alt='content 1' width='100%' height='300px' />
+                        <img src={thumb1} alt='content 1' width='100%' height='300px' />
 
                         <Link to='/' className='content-item-title'>Why BP Global</Link>
 
@@ -53,7 +48,7 @@ function HomePage() {
             </div>
 
             <div className='homepage-3' style={{  
-            backgroundImage: "url(" + thumb3 + ")",
+            backgroundImage: "url(" + image + ")",
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover'
@@ -64,52 +59,52 @@ function HomePage() {
 
                 <div className='homepage-3-content'>
                     <div className='homepage-3-content-item'>
-                        <img src={image} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>DOMESTIC DOUGLAS FIR DIMENSION</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb6} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>PINE PRODUCTS IN DIMENSION AND COMMONS</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb3} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>TIMBERS IN DOUGLAS FIR</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb4} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>PLYWOOD</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb5} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>OSB</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb5} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>HARDWOOD PLYWOOD</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb5} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>IMPORTED CHINESE BIRCH</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb5} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>MPORTED CONCRETE FORM</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb5} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>IMPORTED CHINESE OSB</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={thumb5} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={thumb1} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>IMPORTED BRAZILIAN PINE AND EUCALIPTUS PLYWOOD</Link>
                     </div>
                 </div>
