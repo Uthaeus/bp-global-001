@@ -47,7 +47,7 @@ function HomePage() {
 
                         <Link to='/' className='content-item-title'>Why BP Global</Link>
 
-                        <p className='content-item-blurb'>paragraph here summarizing what is explained on the what we do page. Could probably use another sentence here to make it a little longer. Maybe a little more would make it look a bit better.</p>
+                        <p className='content-item-blurb'>OUR TEAM WORKS IN PARTNERSHIP WITH OUR PARTNER SUPPLIERS AND YOU PARTNER WITH US WE WORK TOGETHER WITH YOU!</p>
                     </div>
                 </div>
             </div>
@@ -65,27 +65,52 @@ function HomePage() {
                 <div className='homepage-3-content'>
                     <div className='homepage-3-content-item'>
                         <img src={image} alt='content item 1' width='100%' height='140px' className='content-item-img' />
-                        <Link to='/' className='content-item-link'>Industrial</Link>
+                        <Link to='/' className='content-item-link'>DOMESTIC DOUGLAS FIR DIMENSION</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
                         <img src={thumb6} alt='content item 1' width='100%' height='140px' className='content-item-img' />
-                        <Link to='/' className='content-item-link'>Lumber & Boards</Link>
+                        <Link to='/' className='content-item-link'>PINE PRODUCTS IN DIMENSION AND COMMONS</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
                         <img src={thumb3} alt='content item 1' width='100%' height='140px' className='content-item-img' />
-                        <Link to='/' className='content-item-link'>Moulding & Millwork</Link>
+                        <Link to='/' className='content-item-link'>TIMBERS IN DOUGLAS FIR</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
                         <img src={thumb4} alt='content item 1' width='100%' height='140px' className='content-item-img' />
-                        <Link to='/' className='content-item-link'>Panels</Link>
+                        <Link to='/' className='content-item-link'>PLYWOOD</Link>
                     </div>
 
                     <div className='homepage-3-content-item'>
                         <img src={thumb5} alt='content item 1' width='100%' height='140px' className='content-item-img' />
-                        <Link to='/' className='content-item-link'>Crane Mats</Link>
+                        <Link to='/' className='content-item-link'>OSB</Link>
+                    </div>
+
+                    <div className='homepage-3-content-item'>
+                        <img src={thumb5} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <Link to='/' className='content-item-link'>HARDWOOD PLYWOOD</Link>
+                    </div>
+
+                    <div className='homepage-3-content-item'>
+                        <img src={thumb5} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <Link to='/' className='content-item-link'>IMPORTED CHINESE BIRCH</Link>
+                    </div>
+
+                    <div className='homepage-3-content-item'>
+                        <img src={thumb5} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <Link to='/' className='content-item-link'>MPORTED CONCRETE FORM</Link>
+                    </div>
+
+                    <div className='homepage-3-content-item'>
+                        <img src={thumb5} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <Link to='/' className='content-item-link'>IMPORTED CHINESE OSB</Link>
+                    </div>
+
+                    <div className='homepage-3-content-item'>
+                        <img src={thumb5} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <Link to='/' className='content-item-link'>IMPORTED BRAZILIAN PINE AND EUCALIPTUS PLYWOOD</Link>
                     </div>
                 </div>
             </div>

@@ -16,7 +16,7 @@ function MainFooter() {
             <p className='footer-address'>
                 Layton, UT 84041
             </p>
-
+            {/* login link here */}
             <div className='footer-socials-wrapper'>
                 <a href='/' target='_blank' className='footer-social'>
                     <i className='bi bi-linkedin'></i>
