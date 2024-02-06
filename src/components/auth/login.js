@@ -1,12 +1,45 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useForm } from "react-hook-form";
 
 function Login() {
+    const { register, handleSubmit } = useForm();
+    const navigate = useNavigate();
+
+    const submitHandler = (data) => {
+
+        console.log('login submit data', data);
+        navigate('/');
+    }
 
     return (
-        <div className="login">
-            <h1 className="login-title">Login</h1>
+        <div className="auth-container">
+            <h1 className="auth-title">Login</h1>
 
-            <Link to='/auth/register' className='login-link'>register</Link>
+            <form className="auth-form" onSubmit={handleSubmit(submitHandler)}>
+                <div className="form-group">
+                    <label htmlFor="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        className="form-control auth-input"
+                        {...register("email", { required: true })}
+                    />
+                </div>
+
+                <div className="form-group"> 
+                    <label htmlFor="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        className="form-control auth-input"
+                        {...register("password", { required: true })}
+                    />
+                </div>
+
+                <button type="submit" className="auth-submit">login</button>
+            </form>
+
+            <Link to='/auth/register' className='auth-link'>register</Link>
         </div>
     );
 }
