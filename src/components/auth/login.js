@@ -39,7 +39,7 @@ function Login() {
                 <button type="submit" className="auth-submit">login</button>
             </form>
 
-            <Link to='/auth/register' className='auth-link'>register</Link>
+            <p className="auth-alt">don't have an account? <Link to='/auth/register' className='auth-link'>register here</Link></p>
         </div>
     );
 }

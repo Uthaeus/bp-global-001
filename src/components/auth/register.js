@@ -18,7 +18,7 @@ function Register() {
             <form className="auth-form" onSubmit={handleSubmit(submitHandler)}>
 
                 <div className="form-group">
-                    <label htmlFor="username">Username*</label>
+                    <label htmlFor="username" className="auth-label">Username *</label>
                     <input
                         type="text"
                         id="username"
@@ -28,7 +28,7 @@ function Register() {
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="email">Email*</label>
+                    <label htmlFor="email" className="auth-label">Email *</label>
                     <input
                         type="email"
                         id="email"
@@ -38,7 +38,7 @@ function Register() {
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="password">Password*</label>
+                    <label htmlFor="password" className="auth-label">Password *</label>
                     <input
                         type="password"
                         id="password"
@@ -50,7 +50,7 @@ function Register() {
                 <button type="submit" className="auth-submit">register</button>
             </form>
 
-            <Link to='/auth/login' className='auth-link'>login</Link>
+            <p className="auth-alt">already have an account? <Link to='/auth/login' className='auth-link'>login here</Link></p>
         </div>
     );
 }

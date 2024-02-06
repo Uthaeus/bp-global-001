@@ -1,6 +1,13 @@
+.auth-layout {
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+    padding-bottom: 426px;
+    font-family: 'Titillium Web', sans-serif;
+}
 
 .auth-container {
-    min-height: 80vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     padding: 2rem 14%;
@@ -8,7 +15,7 @@
 
     .auth-title {
         font-size: 3em;
-        color: $blue400;
+        color: $blue300;
         margin: 2rem 0;
         font-weight: bolder;
     }
@@ -19,7 +26,7 @@
         .auth-label {
             font-size: 1.2em;
             font-weight: bold;
-            color: $blue300;
+            color: $blue400;
             margin-bottom: 0.5rem;
         }
 
@@ -27,17 +34,32 @@
             width: 40%;
             padding: 0.5rem;
             font-size: 1.2em;
-
+            border-bottom: 2px solid $blue300;
+            margin-bottom: 1rem;
         }
 
         .auth-submit {
-            padding: 0.25rem 0.5rem;
+            margin: 1rem;
+            padding: 0.25rem 1.5rem;
             font-size: 1.2em;
             font-weight: bold;
             color: white;
-            background-color: $blue400;
+            background-color: $blue300;
             border: none;
             border-radius: 5px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+            transition: color 300ms ease-in-out, background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+
+            &:hover {
+                color: rgb(221, 222, 224);
+                background-color: $blue400;
+                box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+            }
         }
+    }
+
+    .auth-alt {
+        text-align: right;
+        margin-top: 2rem;
     }
 }
