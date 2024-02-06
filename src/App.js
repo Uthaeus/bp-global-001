@@ -1,6 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import MainLayout from "./components/main-layout";
+import AuthLayout from "./components/auth/auth-layout";
+import Login from "./components/auth/login";
+import Register from "./components/auth/register";
 import ErrorPage from "./components/error";
 import HomePage from "./pages/homepage";
 import AboutPage from "./pages/aboutpage";
@@ -38,6 +41,21 @@ const router = createBrowserRouter([
       {
         path: '/dimensional-lumber',
         element: <DimensionalLumber />
+      }
+    ]
+  },
+  {
+    path: '/auth',
+    element: <AuthLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: '/auth/login',
+        element: <Login />
+      },
+      {
+        path: '/auth/register',
+        element: <Register />
       }
     ]
   }

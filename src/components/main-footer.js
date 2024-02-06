@@ -17,6 +17,12 @@ function MainFooter() {
                 Layton, UT 84041
             </p>
             {/* login link here */}
+
+            <div className='d-flex'>
+                <Link to='/auth/login' className='footer-auth'>login</Link>
+                <Link to='/auth/register' className='footer-auth'>register</Link>
+            </div>
+
             <div className='footer-socials-wrapper'>
                 <a href='/' target='_blank' className='footer-social'>
                     <i className='bi bi-linkedin'></i>
