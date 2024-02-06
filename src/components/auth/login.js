@@ -17,7 +17,7 @@ function Login() {
 
             <form className="auth-form" onSubmit={handleSubmit(submitHandler)}>
                 <div className="form-group">
-                    <label htmlFor="email">Email</label>
+                    <label htmlFor="email" className="auth-label">Email *</label>
                     <input
                         type="email"
                         id="email"
@@ -27,7 +27,7 @@ function Login() {
                 </div>
 
                 <div className="form-group"> 
-                    <label htmlFor="password">Password</label>
+                    <label htmlFor="password" className="auth-label">Password *</label>
                     <input
                         type="password"
                         id="password"

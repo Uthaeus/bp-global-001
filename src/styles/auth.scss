@@ -1,0 +1,43 @@
+
+.auth-container {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 14%;
+    background-color: rgb(221, 222, 224);
+
+    .auth-title {
+        font-size: 3em;
+        color: $blue400;
+        margin: 2rem 0;
+        font-weight: bolder;
+    }
+
+    .auth-form {
+        padding: 0 2rem;
+
+        .auth-label {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: $blue300;
+            margin-bottom: 0.5rem;
+        }
+
+        .auth-input {
+            width: 40%;
+            padding: 0.5rem;
+            font-size: 1.2em;
+
+        }
+
+        .auth-submit {
+            padding: 0.25rem 0.5rem;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+            background-color: $blue400;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+}
