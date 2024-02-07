@@ -33,7 +33,7 @@ function MainNavigation() {
                     <NavLink to='/contact' className={({isActive}) => isActive ? 'nav-link link-active' : 'nav-link'}>Contact Us</NavLink>
 
                     {isLoggedIn && (
-                        <Link to='/' className="account-link">My Account</Link>
+                        <Link to='/account' className="account-link">My Account</Link>
                     )}
                 </div>
             </div>

@@ -3,5 +3,13 @@
     height: calc(100vh - 90px);
     display: flex;
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 3rem 2rem;
+    border-right: 2px solid $blue300;
+
+    .sidebar-image {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        border-radius: 20px 10px 20% 10%;
+    }
 }
