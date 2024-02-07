@@ -1,0 +1,9 @@
+
+.account-layout {
+    min-height: 100vh;
+
+    .account-layout-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+}

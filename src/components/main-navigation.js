@@ -4,6 +4,7 @@ import { useState } from "react";
 import logo from '../assets/images/bp_global_log.png';
 
 function MainNavigation() {
+    const isLoggedIn = true;
 
     return (
         <div className="main-navigation">
@@ -30,6 +31,10 @@ function MainNavigation() {
 
                     <NavLink to='/about' className={({isActive}) => isActive ? 'nav-link link-active' : 'nav-link'}>About Us</NavLink>
                     <NavLink to='/contact' className={({isActive}) => isActive ? 'nav-link link-active' : 'nav-link'}>Contact Us</NavLink>
+
+                    {isLoggedIn && (
+                        <Link to='/' className="account-link">My Account</Link>
+                    )}
                 </div>
             </div>
         </div>

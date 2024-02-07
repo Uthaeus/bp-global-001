@@ -2,6 +2,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import MainLayout from "./components/main-layout";
 import AuthLayout from "./components/auth/auth-layout";
+import AccountLayout from "./components/account/account-layout";
+import AccountHome from "./components/account/account-home";
 import Login from "./components/auth/login";
 import Register from "./components/auth/register";
 import ErrorPage from "./components/error";
@@ -56,6 +58,17 @@ const router = createBrowserRouter([
       {
         path: '/auth/register',
         element: <Register />
+      }
+    ]
+  },
+  {
+    path: '/account',
+    element: <AccountLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        index: true,
+        element: <AccountHome />
       }
     ]
   }
