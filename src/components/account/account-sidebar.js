@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import sidebarImage from '../../assets/images/overtime_image1.jpg';
+import sidebarImage from '../../assets/images/forest_image.png';
 
 export default function AccountSidebar() {
 
