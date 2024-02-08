@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 
-import image from '../assets/images/overtime_image1.jpg';
+import image from '../assets/images/forest_image.png';
 import assortedPlywood from '../assets/thumbnails/assorted_plywood.jpeg';
 import douglasFirPremium from '../assets/thumbnails/douglas_fir_premium.jpg';
 import douglasFirLowgrade from '../assets/thumbnails/douglas_fir_lowgrade.jpeg';
@@ -11,6 +11,7 @@ import domesticPlywood from '../assets/thumbnails/domestic_plywood.jpeg';
 import chineseWhiteBirch from '../assets/thumbnails/chinese_white_birch.jpeg';
 import brazilianPlywood from '../assets/thumbnails/brazilian_plywood.jpeg';
 import brazilianPlywood2 from '../assets/thumbnails/brazilian_plywood_2.jpeg';
+import lumberImage2 from '../assets/thumbnails/lumber_image_2.png';
 
 
 function HomePage() {
@@ -66,7 +67,7 @@ function HomePage() {
                     </div>
 
                     <div className='homepage-3-content-item'>
-                        <img src={assortedPlywood} alt='content item 1' width='100%' height='140px' className='content-item-img' />
+                        <img src={lumberImage2} alt='content item 1' width='100%' height='140px' className='content-item-img' />
                         <Link to='/' className='content-item-link'>PINE PRODUCTS IN DIMENSION AND COMMONS</Link>
                     </div>
 
