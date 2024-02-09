@@ -13,6 +13,9 @@ import ContactPage from "./pages/contactpage";
 import ConcreteForms from "./pages/concrete-forms";
 import Plywoods from "./pages/plywoods";
 import DimensionalLumber from "./pages/dimensional-lumber";
+import Profile from "./components/account/profile";
+import CurrentOrders from "./components/account/current-orders";
+import OrderHistory from "./components/account/order-history";
 
 const router = createBrowserRouter([
   {
@@ -69,6 +72,18 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <AccountHome />
+      },
+      {
+        path: '/account/profile',
+        element: <Profile />
+      },
+      {
+        path: '/account/current-orders',
+        element: <CurrentOrders />
+      },
+      {
+        path: '/account/history',
+        element: <OrderHistory />
       }
     ]
   }
