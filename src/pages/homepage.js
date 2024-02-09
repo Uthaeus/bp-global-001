@@ -12,6 +12,7 @@ import chineseWhiteBirch from '../assets/thumbnails/chinese_white_birch.jpeg';
 import brazilianPlywood from '../assets/thumbnails/brazilian_plywood.jpeg';
 import brazilianPlywood2 from '../assets/thumbnails/brazilian_plywood_2.jpeg';
 import lumberImage2 from '../assets/thumbnails/lumber_image_2.png';
+import lumberOnTrailer from '../assets/images/lumber_on_trailer.png';
 
 
 function HomePage() {
@@ -51,7 +52,7 @@ function HomePage() {
             </div>
 
             <div className='homepage-3' style={{  
-            backgroundImage: "url(" + douglasFirPremium + ")",
+            backgroundImage: "url(" + lumberOnTrailer + ")",
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover'

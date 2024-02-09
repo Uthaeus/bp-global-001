@@ -16,6 +16,8 @@ export default function AccountSidebar() {
 
             <Link to='/account/history' className="sidebar-link">Order History</Link>
 
+            <Link to='/account' className="sidebar-link">Account Home</Link>
+
             <button className="sidebar-logout-btn">Logout</button>
         </div>
     );
