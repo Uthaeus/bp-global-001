@@ -30,12 +30,12 @@
     }
 
     .sidebar-logout-btn {
-        font-size: 1.3em;
+        font-size: 0.9em;
         width: 40%;
         margin: 0 auto;
+        margin-top: 2rem;
         background-color: rgba(255, 0, 0, 0.199);
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-        padding: 0.5rem 0;
         transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
         &:hover {
