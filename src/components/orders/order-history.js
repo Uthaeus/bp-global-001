@@ -9,6 +9,7 @@ function OrderHistory() {
 
             <div className="orders-chart-container">
                 <OrderChartHeader />
+                
             </div>
         </div>
     );

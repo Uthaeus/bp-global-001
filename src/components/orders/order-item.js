@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 function OrderItem({ order }) {
     return (
@@ -12,6 +13,7 @@ function OrderItem({ order }) {
             <p className="order-item-item">{order.shipDate}</p>
             <p className="order-item-item">{order.carrier}</p>
             <p className="order-item-item">{order.lastLocation}</p>
+            <p className="order-item-item"><Link to={`/order/${order.orderNumber}`}>View Details</Link></p>
         </div>
     );
 }
