@@ -74,10 +74,6 @@ const router = createBrowserRouter([
         element: <AccountHome />
       },
       {
-        path: '/account/profile',
-        element: <Profile />
-      },
-      {
         path: '/account/current-orders',
         element: <CurrentOrders />
       },
