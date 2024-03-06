@@ -17,10 +17,10 @@ function UserContextProvider({ children }) {
     const [isAdmin, setIsAdmin] = useState(false);
     const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, initializeUser);
-        return unsubscribe;
-    }, []);
+    // useEffect(() => {
+    //     const unsubscribe = onAuthStateChanged(auth, initializeUser);
+    //     return unsubscribe;
+    // }, []);
 
     const initializeUser = async (user) => {
         if (user) {

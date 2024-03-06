@@ -1,13 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import OrderChartHeader from "./order-chart-header";
-import OrderItem from "./order-item";
+import OrderChartItem from "./order-chart-item";
 
 import { sampleOrders } from "../../store/DUMMY_DATA";
 
 function OrderHistory() {
-    const [activeOrders, setActiveOrders] = useState(sampleOrders.filter(order => order.orderStatus === "Shipped"));
-    const [deliveredOrders, setDeliveredOrders] = useState(sampleOrders.filter(order => order.orderStatus === "Delivered"));
+    const [activeOrders, setActiveOrders] = useState([]);
+    const [deliveredOrders, setDeliveredOrders] = useState([]);
+
+    useEffect(() => {
+        setActiveOrders(sampleOrders.filter(order => order.orderStatus !== "Shipped"));
+        setDeliveredOrders(sampleOrders.filter(order => order.orderStatus === "Shipped"));
+    }, []);
 
     return (
         <div className="orders-container">
@@ -17,12 +22,12 @@ function OrderHistory() {
                 <OrderChartHeader />
                 <p className="orders-chart-title">Active Orders</p>
                 {activeOrders.map(order => (
-                    <OrderItem key={order.orderNumber} order={order} />
+                    <OrderChartItem key={order.orderNumber} order={order} />
                 ))}
 
                 <p className="orders-chart-title">Delivered Orders</p>
                 {deliveredOrders.map(order => (
-                    <OrderItem key={order.orderNumber} order={order} />
+                    <OrderChartItem key={order.orderNumber} order={order} />
                 ))}
                 
             </div>

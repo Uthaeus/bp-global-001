@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function OrderItem({ order }) {
+function OrderChartItem({ order }) {
     return (
         <div className="order-item">
             <p className="order-item-item">{order.poNumber}</p>
@@ -18,4 +18,4 @@ function OrderItem({ order }) {
     );
 }
 
-export default OrderItem;
+export default OrderChartItem;

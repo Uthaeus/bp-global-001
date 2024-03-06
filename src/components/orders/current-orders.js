@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import OrderChartHeader from "./order-chart-header";
-import OrderItem from "./order-item";
+import OrderItem from "./order-chart-item";
 
 import { sampleOrders } from "../../store/DUMMY_DATA";
 
