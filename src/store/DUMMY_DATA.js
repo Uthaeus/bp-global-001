@@ -61,3 +61,46 @@ export const sampleOrders = [
         lastLocation: "Warehouse E"
     }
 ];
+
+export const sampleUsers = [
+    {
+        username: "Steve",
+        password: "password",
+        orders: steveOrders,
+        billingAddress: {
+            street: "123 Main St",
+            city: "New York",
+            state: "NY",
+            zip: "10001",
+            country: "USA"
+        }
+    },
+    {
+        username: "John",
+        password: "password",
+        orders: johnOrders,
+        billingAddress: {
+            street: "456 Main St",
+            city: "New York",
+            state: "NY",
+            zip: "10001",
+            country: "USA"
+        }
+    },
+    {
+        username: "Jane",
+        password: "password",
+        orders: janeOrders,
+        billingAddress: {
+            street: "789 Main St",
+            city: "New York",
+            state: "NY",
+            zip: "10001",
+            country: "USA"
+        }
+    },
+    {
+        username: "Admin",
+        password: "password",
+    }
+]
