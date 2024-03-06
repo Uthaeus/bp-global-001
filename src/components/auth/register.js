@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
 function Register() {
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
     const navigate = useNavigate();
 
     const submitHandler = (data) => {
@@ -27,11 +27,11 @@ function Register() {
                                 className="form-control auth-input"
                                 {...register("companyName", { required: true })}
                             />
+                            {errors.companyName && <p className="auth-error">Company Name is required</p>}
                         </div>
-
                     </div>
-                    <div className="col-md-6">
 
+                    <div className="col-md-6">
                         <div className="form-group">
                             <label htmlFor="email" className="auth-label">Email *</label>
                             <input
@@ -40,8 +40,8 @@ function Register() {
                                 className="form-control auth-input"
                                 {...register("email", { required: true })}
                             />
+                            {errors.email && <p className="auth-error">Email is required</p>}
                         </div>
-
                     </div>
                 </div>
 
@@ -57,6 +57,7 @@ function Register() {
                                 className="form-control auth-input"
                                 {...register("street1", { required: true })}
                             />
+                            {errors.street1 && <p className="auth-error">Street Address is required</p>}
                         </div>
                     </div>
 
@@ -69,6 +70,7 @@ function Register() {
                                 <option value="canada">Canada</option>
                                 <option value="mexico">Mexico</option>
                             </select>
+                            {errors.country && <p className="auth-error">Country is required</p>}
                         </div>
                     </div>
                 </div>
@@ -109,6 +111,7 @@ function Register() {
                                 className="form-control auth-input"
                                 {...register("city", { required: true })}
                             />
+                            {errors.city && <p className="auth-error">City is required</p>}
                         </div>
                     </div>
 
@@ -121,6 +124,7 @@ function Register() {
                                 className="form-control auth-input"
                                 {...register("postalCode", { required: true })}
                             />
+                            {errors.postalCode && <p className="auth-error">Postal Code is required</p>}
                         </div>
                     </div>
 
@@ -133,6 +137,7 @@ function Register() {
                                 <option value="AK">Alaska</option>
                                 <option value="AZ">Arizona</option>
                             </select>
+                            {errors.state && <p className="auth-error">State is required</p>}
                         </div>
                     </div>
                 </div>
@@ -147,6 +152,7 @@ function Register() {
                                 className="form-control auth-input"
                                 {...register("contactName", { required: true })}
                             />
+                            {errors.contactName && <p className="auth-error">Contact Name is required</p>}
                         </div>
                     </div>
 
@@ -159,6 +165,7 @@ function Register() {
                                 className="form-control auth-input"
                                 {...register("contactPhone", { required: true })}
                             />
+                            {errors.contactPhone && <p className="auth-error">Contact Phone is required</p>}
                         </div>
                     </div>
                 </div>
@@ -190,6 +197,7 @@ function Register() {
                                 className="form-control auth-input"
                                 {...register("password", { required: true })}
                             />
+                            {errors.password && <p className="auth-error">Password is required</p>}
                         </div>
 
                     </div>
@@ -203,6 +211,7 @@ function Register() {
                                 className="form-control auth-input"
                                 {...register("confirmPassword", { required: true })}
                             />
+                            {errors.confirmPassword && <p className="auth-error">Confirm Password is required</p>}
                         </div>
 
                     </div>
